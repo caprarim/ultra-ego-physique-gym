@@ -72,8 +72,8 @@ const EndBar = () => {
             className="footer-column-link"
             href="https://www.instagram.com/ultra_egophysique/"
           >
-            <span className="footer-inline-emoji">{"\u{1F4F8}"}</span>
-            <span>Instagram</span>
+            <span className="footer-inline-emoji"><img src="public/ultraego/ig.png" className="igpic"></img></span>
+            <span className="ig">Instagram</span>
           </a>
           <div className="footer-column-link">
             <span className="footer-inline-emoji">{"\u{1F44D}"}</span>
