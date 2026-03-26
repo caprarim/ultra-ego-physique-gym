@@ -98,7 +98,7 @@ const packages = [
     period: "/ 12 months",
     access: "Membership Plan",
     description:
-      "The highest-value plan for full-year commitment, stability, and long-range progress.",
+      "Focused, one-on-one coaching designed to maximize your results with a personalized plan, expert guidance, and faster progress.",
   },
 ];
 
