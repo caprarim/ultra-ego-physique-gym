@@ -64,7 +64,11 @@ const packages = [
     slug: "Personal Training",
     image: `${assetBase}ultraego/main_personaltrain.PNG`,
     title: "Personal Training",
-    price: "Group training 5k, Personal training 8k, One on one training 10k",
+    feeItems: [
+      { label: "Group Training", value: "PKR 5,000" },
+      { label: "Personal Training", value: "PKR 8,000" },
+      { label: "One-on-One Training", value: "PKR 10,000" },
+    ],
     period: "/ monthly",
     access: "Membership Plan",
     description:
@@ -115,10 +119,29 @@ const MembershipCard = ({ plan, joinPlan }) => (
     </div>
     <div className="membership-plan-content">
       <h3 className="membership-plan-title">{plan.title}</h3>
-      <div className="membership-plan-price-row">
-        <span className="membership-plan-price">{plan.price}</span>
-        <span className="membership-plan-price-period">{plan.period}</span>
-      </div>
+      {plan.feeItems ? (
+        <div className="membership-fee-structure">
+          <p className="membership-fee-structure-title">Fee Structure</p>
+          <div className="membership-fee-list">
+            {plan.feeItems.map((item) => (
+              <div className="membership-fee-row" key={item.label}>
+                <span className="membership-fee-label">{item.label}</span>
+                <span className="membership-fee-value">{item.value}</span>
+              </div>
+            ))}
+          </div>
+          <div className="membership-plan-price-row membership-plan-price-row-compact">
+            <span className="membership-plan-price-period">
+              {plan.period}
+            </span>
+          </div>
+        </div>
+      ) : (
+        <div className="membership-plan-price-row">
+          <span className="membership-plan-price">{plan.price}</span>
+          <span className="membership-plan-price-period">{plan.period}</span>
+        </div>
+      )}
       <p className="membership-plan-access">{plan.access}</p>
       <p className="membership-plan-location">
         <span className="membership-plan-location-label">Location:</span> Plot
