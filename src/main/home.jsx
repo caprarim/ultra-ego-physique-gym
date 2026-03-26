@@ -11,12 +11,14 @@ const Home = () => {
 
   let nav = useNavigate();
   const images = [
-    "public/ultraego/15.png",
-    "public/ultraego/15.png",
-    "public/ultraego/16.png",
-    "public/ultraego/17.png",
-    "public/ultraego/18.png",
-    "public/ultraego/19.png",
+    `${assetBase}ultraego/15.PNG`,
+    `${assetBase}ultraego/16.PNG`,
+    `${assetBase}ultraego/17.PNG`,
+    `${assetBase}ultraego/18.PNG`,
+    `${assetBase}ultraego/19.PNG`,
+    `${assetBase}ultraego/21.PNG`,
+    `${assetBase}ultraego/22.PNG`,
+    `${assetBase}ultraego/23.PNG`,
   ];
   const faqItems = [
     {

@@ -19,7 +19,7 @@ const timings = [
 const memberships = [
   {
     slug: "Strength-Special",
-    image: `${assetBase}ultraego/7.PNG`,
+    image: `${assetBase}ultraego/7.png`,
     title: "Strength Special",
     price: "PKR 2500",
     period: "/ month",
