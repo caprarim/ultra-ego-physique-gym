@@ -7,6 +7,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.VERCEL ? "/" : "/MuscleLab-Gym-Website/",
+    base: env.VERCEL ? "/" : "/ultra-ego-physique-gym/",
   };
 });
