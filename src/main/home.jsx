@@ -48,6 +48,7 @@ const Home = () => {
   function toggleFaq(index) {
     setOpenFaqIndex((current) => (current === index ? null : index));
   }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -213,6 +214,17 @@ const Home = () => {
                 </article>
               );
             })}
+          </div>
+
+          <div className="home-follow-header">
+            <h1 className="follow-ig">Follow us on instagram</h1>
+            <a
+              className="follow-ig-btn"
+              href={"https://www.instagram.com/ultra_egophysique/"}
+              target="_blank"
+            >
+              Follow
+            </a>
           </div>
 
           <div className="image-slider-container">

@@ -79,9 +79,15 @@ const EndBar = () => {
             </span>
             <span className="ig">Instagram</span>
           </a>
-          <div className="footer-column-link">
-            <span className="footer-inline-emoji">{"\u{1F525}"}</span>
-            <span>Facebook</span>
+          <div className="footer-column-link footer-social-facebook">
+            <span className="footer-inline-emoji footer-facebook-emoji">
+              <img
+                src={`${assetBase}fb.jpg`}
+                className="fbpic"
+                alt="Facebook"
+              />
+            </span>
+            <span className="footer-facebook-label">Facebook</span>
           </div>
         </section>
       </div>
