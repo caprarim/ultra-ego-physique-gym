@@ -30,16 +30,6 @@ const MoreInfo = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   let nav = useNavigate();
 
-  useEffect(() => {
-    const slideTimer = window.setInterval(() => {
-      setActiveSlide((currentSlide) => {
-        return (currentSlide + 1) % showcaseSlides.length;
-      });
-    }, 3200);
-
-    return () => window.clearInterval(slideTimer);
-  }, [showcaseSlides.length]);
-
   return (
     <>
       <main className="gym-page moreinfo-page">

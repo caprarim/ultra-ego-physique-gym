@@ -7958,3 +7958,50 @@ body::after {
     margin-top: 0.35rem !important;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .about-v2-hero {
+    display: none !important;
+  }
+
+  .about-v2-main {
+    margin-top: 0 !important;
+    width: calc(100% - 0.9rem) !important;
+  }
+}
+.image-slider-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.image-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.group::-webkit-scrollbar {
+  display: none;
+}
+.sliderImg {
+  height: 350;
+  width: 350px;
+  padding-right: 2em;
+  flex: 0 0 5em;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}

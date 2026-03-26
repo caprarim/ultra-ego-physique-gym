@@ -8,8 +8,16 @@ const Home = () => {
   let [isModalDisplay, setModalDisplay] = useState(true);
   let [openFaqIndex, setOpenFaqIndex] = useState(null);
   let [membership, setMembership] = useState("membership");
-  
+
   let nav = useNavigate();
+  const images = [
+    "public/ultraego/15.png",
+    "public/ultraego/15.png",
+    "public/ultraego/16.png",
+    "public/ultraego/17.png",
+    "public/ultraego/18.png",
+    "public/ultraego/19.png",
+  ];
   const faqItems = [
     {
       question: "How do I join Ultra Ego Physique?",
@@ -170,7 +178,6 @@ const Home = () => {
             ></video>
           </div>
         </section>
-      
 
         <section className="home-faq" aria-label="Frequently asked questions">
           <div className="home-faq-header">
@@ -206,6 +213,35 @@ const Home = () => {
                 </article>
               );
             })}
+          </div>
+
+          <div className="image-slider-container">
+            <div className="group">
+              {images.map((imageSrc) => {
+                return (
+                  <>
+                    <img
+                      src={imageSrc}
+                      className="sliderImg"
+                      id="myCards"
+                    ></img>
+                  </>
+                );
+              })}
+            </div>
+            <div className="group" aria-hidden>
+              {images.map((imageSrc) => {
+                return (
+                  <>
+                    <img
+                      src={imageSrc}
+                      className="sliderImg"
+                      id="myCards"
+                    ></img>
+                  </>
+                );
+              })}
+            </div>
           </div>
         </section>
 
