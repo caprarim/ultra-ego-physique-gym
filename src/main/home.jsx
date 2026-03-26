@@ -224,6 +224,7 @@ const Home = () => {
               className="follow-ig-btn"
               href={"https://www.instagram.com/ultra_egophysique/"}
               target="_blank"
+              rel="noreferrer"
             >
               Follow
             </a>

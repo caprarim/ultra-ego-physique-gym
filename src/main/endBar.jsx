@@ -17,6 +17,7 @@ const EndBar = () => {
                 className="anchor-location"
                 href="https://www.google.com/maps/place/Ultra+Ego+Physique+Gym/@24.9781933,67.0630618,17z/data=!4m15!1m8!3m7!1s0x3eb341ce24019e9b:0xd04e65d74aaf9142!2sUltra+Ego+Physique+Gym!8m2!3d24.9781933!4d67.0656367!10e1!16s%2Fg%2F11mlzvyr9c!3m5!1s0x3eb341ce24019e9b:0xd04e65d74aaf9142!8m2!3d24.9781933!4d67.0656367!16s%2Fg%2F11mlzvyr9c?hl=en&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
+                rel="noreferrer"
               >
                 Plot #A, 906
                 <br />
@@ -25,13 +26,20 @@ const EndBar = () => {
                 North Karachi
               </a>
             </p>
-            <a className="footer-contact-phone" href="tel:03293179505">
+            <a
+              className="footer-contact-phone"
+              href="tel:03293179505"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span className="footer-inline-emoji">{"\u260E\uFE0F"}</span>
               <span>0329-3179505</span>
             </a>
             <a
               className="footer-contact-email"
               href="mailto:UltraEgoPhysique@gmail.com"
+              target="_blank"
+              rel="noreferrer"
             >
               <span className="footer-inline-emoji">{"\u{1F4E7}"}</span>
               <span>UltraEgoPhysique@gmail.com</span>
@@ -73,6 +81,8 @@ const EndBar = () => {
           <a
             className="footer-column-link"
             href="https://www.instagram.com/ultra_egophysique/"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="footer-inline-emoji">
               <img src={`${assetBase}ultraego/ig.png`} className="igpic"></img>

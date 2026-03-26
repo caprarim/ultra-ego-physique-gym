@@ -121,7 +121,7 @@ const MembershipCard = ({ plan, joinPlan }) => (
       <h3 className="membership-plan-title">{plan.title}</h3>
       {plan.feeItems ? (
         <div className="membership-fee-structure">
-          <p className="membership-fee-structure-title">Fee Structure</p>
+          <p className="membership-fee-structure-title">Prices</p>
           <div className="membership-fee-list">
             {plan.feeItems.map((item) => (
               <div className="membership-fee-row" key={item.label}>
