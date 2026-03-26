@@ -8150,3 +8150,28 @@ body::after {
     border-radius: 22px;
   }
 }
+
+/* Final membership spacing override */
+.membership-page .membership-plan-content {
+  gap: 0.95rem !important;
+}
+
+.membership-page .membership-plan-price-row {
+  margin-top: 0.3rem !important;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.75rem !important;
+  gap: 0.75rem !important;
+}
+
+.membership-page .membership-plan-price {
+  line-height: 1.05 !important;
+}
+
+.membership-page .membership-plan-price-period {
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+}
+
+.membership-page .membership-plan-title {
+  margin-bottom: 0.05rem !important;
+}
