@@ -61,6 +61,16 @@ const memberships = [
 
 const packages = [
   {
+    slug: "Personal Training",
+    image: `public/ultraego/mainn_personaltrain.png`,
+    title: "Personal Training",
+    price: "Group training 5k, Personal training 8k, One on one training 10k",
+    period: "/ monthly",
+    access: "Membership Plan",
+    description:
+      "A sharper commitment for members ready to stay consistent and build momentum over time.",
+  },
+  {
     slug: "Quarterly",
     image: `${assetBase}ultraego/16.PNG`,
     title: "Quarterly",

@@ -8001,6 +8001,7 @@ body::after {
   display: flex;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  gap: 1em;
 }
 
 .image-slider-container::-webkit-scrollbar {
